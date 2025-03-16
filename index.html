@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: rgb(132, 88, 173);">
+    <div class="container">
+        <div style="background-color: rgb(115, 115, 186);"><h1>Car Price Prediction</h1></div>
+        <form id="predictionForm">
+            <label>KM Driven:</label> <input type="number" id="km_driven" required><br>
+            <label>Fuel Type:</label> 
+            <select id="fuel">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="CNG">CNG</option>
+                <option value="Electric">Electric</option>
+            </select><br>
+            <label>Seller Type:</label> 
+            <select id="seller_type">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select><br>
+            <label>Transmission:</label> 
+            <select id="transmission">
+                <option value="Manual">Manual</option>
+                <option value="Automatic">Automatic</option>
+            </select><br>
+            <label>Owner Type:</label> 
+            <select id="owner">
+                <option value="First Owner">First Owner</option>
+                <option value="Second Owner">Second Owner</option>
+                <option value="Third Owner">Third Owner</option>
+                <option value="morethen Owner">Third Owner</option>
+            </select><br>
+            <button type="submit">Predict Price</button>
+        </form>
+        <h3 id="result"></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
